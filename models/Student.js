@@ -71,6 +71,5 @@ studentSchema.virtual('full_address').get(function() {
 
 // Index for faster queries
 studentSchema.index({ Last_Name: 1, First_Name: 1 });
-studentSchema.index({ Student_ID: 1 });
 
 module.exports = mongoose.model('Student', studentSchema);

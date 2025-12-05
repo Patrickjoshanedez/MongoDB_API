@@ -37,7 +37,6 @@ const subjectSchema = new mongoose.Schema({
 });
 
 // Index for faster queries
-subjectSchema.index({ Subject_Code: 1 });
 subjectSchema.index({ FK_Course_ID: 1 });
 
 module.exports = mongoose.model('Subject', subjectSchema);

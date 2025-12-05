@@ -39,7 +39,6 @@ const enrollmentSchema = new mongoose.Schema({
 });
 
 // Index for faster queries
-enrollmentSchema.index({ Enrollment_ID: 1 });
 enrollmentSchema.index({ FK_Student_ID: 1 });
 enrollmentSchema.index({ FK_Course_ID: 1 });
 enrollmentSchema.index({ Date_Enrolled: -1 });

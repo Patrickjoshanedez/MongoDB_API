@@ -39,6 +39,5 @@ const studentScheduleSchema = new mongoose.Schema({
 
 // Compound index to prevent duplicate subject enrollment
 studentScheduleSchema.index({ FK_Enrollment_ID: 1, FK_Subject_Code: 1 }, { unique: true });
-studentScheduleSchema.index({ Schedule_ID: 1 });
 
 module.exports = mongoose.model('StudentSchedule', studentScheduleSchema);

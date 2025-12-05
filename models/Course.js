@@ -30,8 +30,5 @@ const courseSchema = new mongoose.Schema({
   timestamps: true
 });
 
-// Index for faster queries
-courseSchema.index({ Course_ID: 1 });
-courseSchema.index({ Name: 1 });
 
 module.exports = mongoose.model('Course', courseSchema);
